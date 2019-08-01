@@ -1,2 +1,2 @@
-# -
+# WxProgram
 newspaper
