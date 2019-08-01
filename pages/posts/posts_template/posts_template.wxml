@@ -1,0 +1,22 @@
+<!--pages/posts/posts_template/posts_template.wxml-->
+<template name="posts_template">
+  <view class="post-container">
+    <view class="post-author">
+      <image src="{{item.avatar}}" class="post-author-icon"></image>
+      <text class="post-author-text">{{item.date}}</text>
+    </view>
+    <text class="post-title">{{item.title}}</text>
+    <image class="post-image" src="{{item.headImgSrc}}"></image>
+    <view class="post-content">{{item.content}}</view>
+    <view class="post-info">
+      <view class="post-info-container">
+        <image src="../../images/icon/none-star.png" class="post-info-image"></image>
+        <text class="post-info-text">{{item.collection}}</text>
+      </view>
+      <view class="post-info-container">
+        <image src="../../images/icon/view.png" class="post-info-image"></image>
+        <text class="post-info-text">{{item.reading}}</text>
+      </view>
+    </view>
+  </view>
+</template>

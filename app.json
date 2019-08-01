@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/posts/posts",
+    "pages/posts/posts_template/posts_template",
+    "pages/posts/posts_detail/posts_detail",
+    "pages/demo/demo",
+    "pages/demo1/demo1"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ADD8E6"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/posts/posts",
+        "text": "刺猬",
+        "iconPath": "images/tab/ciwei.png",
+        "selectedIconPath": "images/tab/ciwei_hl.png"
+      },
+      {
+        "pagePath": "pages/demo/demo",
+        "text": "电影",
+        "iconPath": "images/tab/dianying.png",
+        "selectedIconPath": "/images/tab/dianying_hl.png"
+      },
+      {
+        "pagePath": "pages/demo1/demo1",
+        "text": "阅读",
+        "iconPath": "images/tab/yuedu.png",
+        "selectedIconPath": "/images/tab/yuedu_hl.png"
+      }
+    ],
+    "borderStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json"
+}

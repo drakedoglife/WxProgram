@@ -1,0 +1,22 @@
+<!--pages/posts/posts.wxml-->
+<import src="./posts_template/posts_template.wxml" />
+<!-- 轮播图开始 -->
+<view class="swiper-container">
+  <swiper class="swiper-list" autoplay="true" interval="3000" circular="true">
+    <swiper-item>
+      <image src="../../images/iqiyi.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../images/vr.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../images/wx.png"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<!-- 轮播图结束 -->
+<block wx:for="{{post_key}}" wx:key="1">
+  <view bind:tap="onTapto" data-postid="{{index}}">
+    <template is="posts_template" data="{{item}}"></template>
+  </view>
+</block>
